@@ -1,0 +1,12 @@
+{
+  "name": "registroautomotor2",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node dist/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,6 +1,6 @@
 # Inicializar código
 
-##### Introducir en consola el siguiente comando:
+Ingresar en la carpeta requerida y luego ejecutar el siguiente comando en consola:
 ```
 npm run dev
-```
+````

@@ -12,6 +12,7 @@ export class Mago extends Personaje {
   ) {
     super(nombre, puntosDeVida, habilidades, caracteristicas);
     this.mana = mana;
+    this.posiblesAtaques = ["Rayo", "Explosión de Hielo"];
   }
 
   public evolucionar(

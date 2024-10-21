@@ -6,6 +6,7 @@ class Arquero extends Personaje_1.Personaje {
     constructor(nombre, puntosDeVida, habilidades, caracteristicas, agilidad) {
         super(nombre, puntosDeVida, habilidades, caracteristicas);
         this.agilidad = agilidad;
+        this.posiblesAtaques = ["Flecha de Fuego", "Flecha Helada"];
     }
     evolucionar(nivel, puntosDeVida, nuevasHabilidades, agilidadExtra) {
         super.evolicionar(nivel, puntosDeVida, nuevasHabilidades);

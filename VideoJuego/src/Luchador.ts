@@ -12,6 +12,11 @@ export class Luchador extends Personaje {
   ) {
     super(nombre, puntosDeVida, habilidades, caracteristicas);
     this.fuerza = fuerza;
+    this.posiblesAtaques = [
+      "Puño Relampago",
+      "Lluvia de Patadas",
+      "Gancho Mortal",
+    ];
   }
 
   public evolucionar(

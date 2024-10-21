@@ -6,6 +6,7 @@ class Mago extends Personaje_1.Personaje {
     constructor(nombre, puntosDeVida, habilidades, caracteristicas, mana) {
         super(nombre, puntosDeVida, habilidades, caracteristicas);
         this.mana = mana;
+        this.posiblesAtaques = ["Rayo", "Explosión de Hielo"];
     }
     evolucionar(nivel, puntosDeVida, nuevasHabilidades, manaExtra) {
         super.evolicionar(nivel, puntosDeVida, nuevasHabilidades);

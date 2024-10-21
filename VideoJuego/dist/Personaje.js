@@ -5,6 +5,8 @@ class Personaje {
     constructor(nombre, puntosDeVida, habilidades, caracteristicas) {
         this.habilidades = [];
         this.caracteristicas = [];
+        this.caja = false;
+        this.posiblesAtaques = [];
         this.nombre = nombre;
         this.puntosDeVida = puntosDeVida;
         this.habilidades = habilidades;
@@ -23,6 +25,17 @@ class Personaje {
     }
     defender() {
         return "Defendiendo";
+    }
+    cajaEncontrada() {
+        console.log("Caja abierta");
+        this.caja = true;
+        this.obtenerAtaque();
+    }
+    obtenerAtaque() {
+        if (this.caja && this.posiblesAtaques.length > 0) {
+            const nuevoAtaque = this.posiblesAtaques[Math.floor(Math.random() * this.posiblesAtaques.length)];
+            console.log(`${this.nombre} Ha obtenido un nuevo ataque obtenido: ${nuevoAtaque}\n`);
+        }
     }
     toString() {
         return ("----- Personaje -----\n" +

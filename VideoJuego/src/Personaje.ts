@@ -4,6 +4,8 @@ export class Personaje {
   private puntosDeVida: number;
   private habilidades: Array<string> = [];
   private caracteristicas: Array<string> = [];
+  private caja: boolean = false;
+  protected posiblesAtaques: Array<string> = [];
 
   constructor(
     nombre: string,
@@ -36,6 +38,24 @@ export class Personaje {
 
   public defender(): string {
     return "Defendiendo";
+  }
+
+  public cajaEncontrada(): void {
+    console.log("Caja abierta");
+    this.caja = true;
+    this.obtenerAtaque();
+  }
+
+  public obtenerAtaque(): void {
+    if (this.caja && this.posiblesAtaques.length > 0) {
+      const nuevoAtaque =
+        this.posiblesAtaques[
+          Math.floor(Math.random() * this.posiblesAtaques.length)
+        ];
+      console.log(
+        `${this.nombre} Ha obtenido un nuevo ataque obtenido: ${nuevoAtaque}\n`
+      );
+    }
   }
 
   public toString(): string {

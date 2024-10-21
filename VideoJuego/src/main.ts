@@ -27,9 +27,12 @@ const Conan = new Luchador(
 
 Merlin.evolucionar(2, 60, ["Lluvia de Fuego"], 30);
 console.log(Merlin.toString());
+Merlin.cajaEncontrada();
 
 Legolas.evolicionar(4, 140, ["Flecha Invisible"]);
 console.log(Legolas.toString());
+Legolas.cajaEncontrada();
 
 Conan.evolucionar(1, 25, ["Carga", "Defensa Imbatible"], 10);
 console.log(Conan.toString());
+Conan.cajaEncontrada();

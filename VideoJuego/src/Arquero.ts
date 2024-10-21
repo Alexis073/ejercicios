@@ -12,6 +12,7 @@ export class Arquero extends Personaje {
   ) {
     super(nombre, puntosDeVida, habilidades, caracteristicas);
     this.agilidad = agilidad;
+    this.posiblesAtaques = ["Flecha de Fuego", "Flecha Helada"];
   }
 
   public evolucionar(
